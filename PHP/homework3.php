@@ -25,6 +25,4 @@ function primeNumberCheak($n)
 $target = 2;
 
 primeNumberCheak($target);
-
-
 ?>

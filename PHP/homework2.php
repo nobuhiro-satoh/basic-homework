@@ -14,6 +14,5 @@ function factorialOfNumber($n)
 }
 
 echo factorialOfNumber(10);
-
 ?>
 

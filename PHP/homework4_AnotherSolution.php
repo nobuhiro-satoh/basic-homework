@@ -43,7 +43,4 @@ foreach(searchPrimeNumbers($target) as $num)
 {
 	echo $num."<br>";
 }
-
 ?>
-
-
