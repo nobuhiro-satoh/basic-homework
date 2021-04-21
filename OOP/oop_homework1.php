@@ -35,6 +35,4 @@ $heightOfRectangle = 8;
 $rectangle = new Rectangle($widthOfRectangle, $heightOfRectangle);
 
 echo "When width is {$widthOfRectangle} and height is {$heightOfRectangle}, the area of the rectangle is {$rectangle->area()}.<br>";
-
 ?>
-

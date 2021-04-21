@@ -64,6 +64,4 @@ class MailChimp extends Emailer {
 // MailChimp
  $mcEmailer = new MailChimp("youremail@yourdomain.com");
  $mcEmailer->addRecipients("emailID@domain.com")->setSubject("Just a Test")->setBody("Hi Name, How are you?")->sendEmail();
-
- ?>
-
+?>
