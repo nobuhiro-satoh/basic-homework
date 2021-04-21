@@ -25,7 +25,6 @@ if(primeNumberCheak($target)){
 }else{
 	echo "$target is not prime number.";
 }
-
 ?>
 
 
