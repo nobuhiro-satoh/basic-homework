@@ -61,6 +61,29 @@ class LinkedList{
             $currNode = $currNode->getNext();
         }
     }
+
+    public function deleteFirst($data)
+    {
+        if ($this->head == null){
+            echo "List is empty.";
+            return;
+        }
+
+        if ($this->head->getData() == $data){
+            $this->head = $this->head->getNext();
+        } else {
+            $current = $this->head;
+            while ($current->getNext() != null){
+                if ($current->getNext()->getData() == $data){
+                    $current->setNext($current->getNext()->getNext());
+                    return;
+                }
+                $current = $current->getNext();
+            }
+            echo "Not found.";
+        }
+
+    }
 }
 
 $list = new LinkedList(); // init linked list: $head = null
@@ -69,5 +92,14 @@ $list->insert(4); // (5) -> (4)
 $list->insert(10); // (5) -> (4) -> (10)
 
 $list->visit(); // visit linked list
+
+$list->deleteFirst(4);
+$list->visit(); // 5 10
+
+$list->deleteFirst(5);
+$list->visit(); // 10
+
+$list->deleteFirst(1); // Not found.
+$list->visit(); // 10
 
 ?>
